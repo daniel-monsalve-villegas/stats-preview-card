@@ -1,0 +1,136 @@
+:root {
+	--veryDarkBlue: hsl(233, 47%, 7%);
+	--darkDesaturatedBlue: hsl(244, 38%, 16%);
+	--softViolet: hsl(277, 64%, 61%);
+	--white: hsl(0, 0%, 100%);
+	--slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+	--slightlyMoreTransparentWhite: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: var(--veryDarkBlue);
+	color: var(--white);
+	border-radius: 3%;
+}
+
+#fullContainer {
+	display:flex;
+	flex-flow: row-reverse nowrap;
+	flex-direction: flex-start;
+}
+
+#imagen {
+	width: 50%;
+	margin: 1em 1em 1em 0;
+	max-width: 100%;
+	height: 95vh;
+	background: url(../assets/image-header-desktop.jpg);
+	background-size: cover;
+	background-color: var(--softViolet);
+	background-blend-mode: luminosity;
+	border-top-right-radius: 3%;
+	border-bottom-right-radius: 3%;
+	filter: opacity(65%) contrast(90%);
+}
+
+.info {
+	margin: 1em 0 1em 1em;
+	background-color: var(--darkDesaturatedBlue);
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	max-width: 50%;
+	border-top-left-radius: 3%;
+	border-bottom-left-radius: 3%;
+}
+
+.info h1 {
+	padding: 5em 7em 2em 2em;
+	font-size: 50px;
+}
+
+strong {
+	color: var(--softViolet);
+}
+
+.info p {
+	font-size: 20px;
+	line-height: 2em;
+	font-weight: 400;
+	padding: 0 7em 1em 5em;
+	max-width: 90%;
+	color: var(--slightlyTransparentWhite);
+}
+
+#infoData {
+	background-color: var(--darkDesaturatedBlue);
+	border-bottom-left-radius: 3%;
+	border-bottom-right-radius: 3%;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+
+
+#infoData p {
+	color: var(--slightlyMoreTransparentWhite);
+
+}
+
+@media (max-width: 375px) {
+	#fullContainer {
+		flex-flow: column nowrap;
+	}
+
+	#imagen {
+		margin: 15px 15px 0 15px;
+		width: 92%;
+		height: 30vh;
+		background: url(../assets/image-header-mobile.jpg);
+		background-size: cover;
+		background-color: var(--softViolet);
+		background-blend-mode: luminosity;
+		filter: opacity(65%) contrast(90%);
+		border-top-left-radius: 3%;
+		border-bottom-right-radius: 0;
+	}
+
+	.info {
+		margin: 0 15px 0 15px;
+		text-align: center;
+		padding: 40px 20px 30px 20px;
+		max-width: 100%;
+		border-radius: 0;
+	}
+
+	.info p {
+		margin: 20px 20px 20px 20px;
+		font-size: 15px;
+		line-height: 25px;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.info h1 {
+		font-size: 30px;
+		padding: 0 0.3em;
+	}
+
+	#infoData {
+		height: 30vh;
+		text-align: center;
+		margin: 0 15px 0 15px;
+	}
+
+	#infoData div {
+		padding: 0 40% 7%;
+	}
+
+	#infoData p {
+		font-size: 13px;
+		margin-top: 7px;
+	}
+}
