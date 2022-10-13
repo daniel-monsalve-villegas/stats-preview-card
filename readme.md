@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-[!Alt text](https://developer.mozilla.org/es/)
+[!Alt text](./screenshots/2022-10-12-145751_1920x1080_scrot.png)
 
 ## My process
 
