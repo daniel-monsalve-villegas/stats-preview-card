@@ -39,45 +39,50 @@ body {
 }
 
 .info {
+	display: flex;
+	flex-direction: column;
 	margin: 1em 0 1em 1em;
 	background-color: var(--darkDesaturatedBlue);
 	font-family: 'Inter', sans-serif;
 	font-weight: 700;
 	max-width: 50%;
-	border-top-left-radius: 3%;
 	border-bottom-left-radius: 3%;
-}
-
-.info h1 {
-	padding: 5em 7em 2em 2em;
-	font-size: 50px;
+	border-top-left-radius: 3%;
 }
 
 strong {
 	color: var(--softViolet);
 }
 
-.info p {
+.info h1 {
+	font-size: 50px;
+	margin: 3em 0 1em 2em;
+	max-width: 70%;
+}
+
+#paragraph {
 	font-size: 20px;
 	line-height: 2em;
 	font-weight: 400;
-	padding: 0 7em 1em 5em;
-	max-width: 90%;
+	max-width: 70%;
+	margin-left: 5em;
 	color: var(--slightlyTransparentWhite);
 }
 
 #infoData {
-	background-color: var(--darkDesaturatedBlue);
-	border-bottom-left-radius: 3%;
-	border-bottom-right-radius: 3%;
-	font-family: 'Lexend Deca', sans-serif;
+	display: flex;
+	margin-left: 2em;
 }
 
+#infoData h1 {
+	font-size: 35px;
+}
 
-
-#infoData p {
+.works {
 	color: var(--slightlyMoreTransparentWhite);
-
+	font-size: 18px;
+	margin-left: 4em;
+	font-weight: 400;
 }
 
 @media (max-width: 375px) {
@@ -87,7 +92,7 @@ strong {
 
 	#imagen {
 		margin: 15px 15px 0 15px;
-		width: 92%;
+		width: 93%;
 		height: 30vh;
 		background: url(../assets/image-header-mobile.jpg);
 		background-size: cover;
@@ -101,36 +106,51 @@ strong {
 	.info {
 		margin: 0 15px 0 15px;
 		text-align: center;
-		padding: 40px 20px 30px 20px;
+		width: 21.8em;
 		max-width: 100%;
-		border-radius: 0;
+		border-bottom-left-radius: 3%;
+		border-bottom-right-radius: 3%;
+		border-top-left-radius: 0;
 	}
 
-	.info p {
-		margin: 20px 20px 20px 20px;
-		font-size: 15px;
+	#paragraph {
+		font-size: 16px;
 		line-height: 25px;
 		max-width: 100%;
-		padding: 0;
+		position: relative;
+		top: -3em;
+		left: -2em;
 	}
 
 	.info h1 {
 		font-size: 30px;
-		padding: 0 0.3em;
+		position: relative;
+		top: -1.6em;
 	}
 
 	#infoData {
 		height: 30vh;
 		text-align: center;
-		margin: 0 15px 0 15px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
 	}
 
-	#infoData div {
-		padding: 0 40% 7%;
+	#infoData div{
+		height: 10vh;
 	}
 
-	#infoData p {
-		font-size: 13px;
-		margin-top: 7px;
+	#infoData h1 {
+		font-size: 30px;
+		position: relative;
+		top: -3em;
+		left: -1.5em;
+	}
+
+	.works {
+		font-size: 14px;
+		position: relative;
+		top: -8em;
+		left: -3.3em;
 	}
 }
