@@ -16,6 +16,8 @@ body {
 	background-color: var(--veryDarkBlue);
 	color: var(--white);
 	border-radius: 3%;
+	width: 80%;
+	margin: 6em auto;
 }
 
 #fullContainer {
@@ -28,7 +30,7 @@ body {
 	width: 50%;
 	margin: 1em 1em 1em 0;
 	max-width: 100%;
-	height: 95vh;
+	height: 75vh;
 	background: url(../assets/image-header-desktop.jpg);
 	background-size: cover;
 	background-color: var(--softViolet);
@@ -86,13 +88,17 @@ strong {
 }
 
 @media (max-width: 375px) {
+	body {
+		margin: 10px 25px;
+	}
+
 	#fullContainer {
 		flex-flow: column nowrap;
 	}
 
 	#imagen {
 		margin: 15px 15px 0 15px;
-		width: 93%;
+		width: 100%;
 		height: 30vh;
 		background: url(../assets/image-header-mobile.jpg);
 		background-size: cover;
